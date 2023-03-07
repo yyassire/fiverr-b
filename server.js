@@ -24,7 +24,13 @@ const connect = async () => {
   }
 };
 
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(
+  cors({
+    origin: "https://marvelous-taffy-9dafec.netlify.app",
+    credentials: true,
+  })
+);
+// app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 app.use(express.json());
 app.use(cookieParser());
 app.get("/", (req, res) => {
