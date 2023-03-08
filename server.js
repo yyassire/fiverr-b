@@ -26,7 +26,7 @@ const connect = async () => {
 
 app.use(
   cors({
-    origin: "https://marvelous-taffy-9dafec.netlify.app",
+    origin: "https://jazzy-tiramisu-755b36.netlify.app",
     credentials: true,
   })
 );
